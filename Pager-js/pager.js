@@ -1,7 +1,7 @@
 // Copy the below code into a bookmark on your bookmarks bar in Chrome
 // Remove the comments and line spaces
 javascript: (function () {
-    var change = -1;
+    var change = 1;
     var ticker = function () {
         var urlParams;
         urlParams = [];
