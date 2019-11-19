@@ -20,11 +20,15 @@ javascript: (function () {
             this.k++;
         }
         for (let index = 0; index < urlParams.length; index++) {
-            const element = urlParams[index]; var currentUrl = window.location.href;
+            const element = urlParams[index];
+            if(!isNaN(element.value))
+            {
+            var currentUrl = window.location.href;
             var newVal = parseInt(element.value) + change;
             var newUrl = currentUrl.replace(element.key + '=' + element.value, element.key + '=' + newVal);
             self.location = newUrl;
             break;
+            }
         }
     };
     ticker();
